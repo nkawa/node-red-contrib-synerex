@@ -1,5 +1,5 @@
 <script type="text/javascript">
-  RED.nodes.registerType('NotifyDemand', {
+  RED.nodes.registerType('FleetNotifySupply', {
     category: 'Synerex',
     color: '#FFFFFF',
     defaults: {
@@ -8,12 +8,12 @@
     },
     inputs: 1,
     outputs: 1,
-    icon: "file.png",
+    icon: "synerex.png",
     label: function () {
       if (this.name) {
         return this.name;
       } else {
-        return "NotifyDemand";
+        return "FleetNotifySupply";
       }
     },
     labelStyle: function () {
@@ -22,7 +22,7 @@
   });
 </script>
 
-<script type="text/x-red" data-template-name="NotifyDemand">
+<script type="text/x-red" data-template-name="FleetNotifySupply">
   <div class="form-row">
     <label for="node-input-login"><i class="fa fa-user"></i> Synerex info</label>
     <input type="text" id="node-input-login">
@@ -34,6 +34,6 @@
   </div>
 </script>
 
-<script type="text/x-red" data-help-name="NotifyDemand">
-  <p>NotifyDemand</p>
+<script type="text/x-red" data-help-name="FleetNotifySupply">
+  <p>FleetNotifySupply</p>
 </script>
